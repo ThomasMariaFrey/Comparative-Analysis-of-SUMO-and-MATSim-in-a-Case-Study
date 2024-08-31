@@ -11,10 +11,10 @@ MATSim contains the input data relevant for the creation of the scenario for the
 Results contains the scripts that are used to extract output data.  
 
 ## Structure
-1. [CEMDAP](#cemdap)
-2. [CaDyTS](#cadyts)
-3. [MATSim](#matsim)
-4. [Results](#results)
+1. [CEMDAP](#1-cemdap)
+2. [CaDyTS](#2-cadyts)
+3. [MATSim](#3-matsim)
+4. [Results](#4-results)
 
 ## 1. CEMDAP  
 CEMDAP is used to create the *population.xml* file which is used as the input for the MATSim scenario.  
