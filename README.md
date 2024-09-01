@@ -9,6 +9,7 @@ CEMDAP contains scripts that are used to create the input data for the CEMDAP so
 CaDyTS contains scripts that are used to create the input data for the CADYTS extension of MATSIM.
 MATSim contains the input data relevant for the creation of the scenario for the city of Mannheim.
 Results contains the scripts that are used to extract output data.  
+Please make sure to note the comments in the scripts explaining the way they work.
 
 ## Structure
 1. [CEMDAP](#1-cemdap)
@@ -32,10 +33,16 @@ How this works is described here: [CaDyTS in MATSim](https://github.com/matsim-o
 
 The directory *CaDyTS* contains one file that is used to transform the induction loop data into a format that can be transferred into the _counts.xml_ file.
 All data sources for the 16.05.2023 are present in the _CaDyTS_Transformer.py_ file.
-Please also note the comments in this file.
 
 ## 3. MATSim  
 
-TODO GTFStoMATSim
+Note: The network file of this scenario was created with [JOSM](https://josm.openstreetmap.de/) and [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis#Downloading). To include public transport 
+https://github.com/matsim-org/pt2matsim/tree/master
 
 ## 4. Results  
+The _Results_ directory contains scripts that I used to extract information and generate graphs for the presentation in my thesis. 
+Many files have not been included as they contain references to individual movement data. 
+Therefore only scripts that consider MATSim, not SUMO or the Survey are included.
+These files are not relevant for the generation of the MATSim scenario.
+
+
