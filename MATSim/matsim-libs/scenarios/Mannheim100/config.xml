@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE config SYSTEM "http://www.matsim.org/files/dtd/config_v2.dtd">
+<config>
+	<module name="replanningAnnealer">
+		<param name="activateAnnealingModule" value="false"/>
+	</module>
+	<module name="TimeAllocationMutator">
+		<param name="mutationAffectsDuration" value="true"/>
+		<param name="mutationRange" value="7200.0"/>
+	</module>
+	<module name="controller">
+		<param name="createGraphs" value="true"/>
+		<param name="firstIteration" value="0"/>
+		<param name="lastIteration" value="100"/>
+		<param name="mobsim" value="qsim"/>
+		<param name="overwriteFiles" value="failIfDirectoryExists"/>
+		<param name="routingAlgorithmType" value="SpeedyALT"/>
+		<param name="writeEventsInterval" value="25"/>
+		<param name="writePlansInterval" value="25"/>
+		<param name="writeSnapshotsInterval" value="25"/>
+		<param name="outputDirectory" value="scenarios/Mannheim100/output"/>
+	</module>
+	<module name="counts">
+		<param name="inputCountsFile" value="counts.xml"/>
+		<param name="countsScaleFactor" value="1"/>
+	</module>
+	<module name="global">
+		<param name="coordinateSystem" value="EPSG:32632"/>
+		<param name="defaultDelimiter" value=";"/>
+		<param name="insistingOnDeprecatedConfigVersion" value="true"/>
+		<param name="numberOfThreads" value="12"/>
+	</module>
+	<module name="network">
+		<param name="inputNetworkFile" value="network.xml"/>
+	</module>
+	<module name="scoring">
+		<param name="fractionOfIterationsToStartScoreMSA" value="0.8"/>
+		<parameterset type="scoringParameters">
+			<param name="marginalUtilityOfMoney" value="1.0"/>
+			<param name="performing" value="6.8"/>
+			<parameterset type="modeParams">
+				<param name="constant" value="-0.6269580844054548"/>
+				<param name="dailyMonetaryConstant" value="-3.0"/>
+				<param name="marginalUtilityOfDistance_util_m" value="0.0"/>
+				<param name="marginalUtilityOfTraveling_util_hr" value="0.0"/>
+				<param name="mode" value="car"/>
+				<param name="monetaryDistanceRate" value="-2.25E-4"/>
+			</parameterset>
+			<parameterset type="modeParams">
+				<param name="constant" value="-0.0603275892746102"/>
+				<param name="dailyMonetaryConstant" value="-0.8"/>
+				<param name="dailyUtilityConstant" value="0.0"/>
+				<param name="marginalUtilityOfDistance_util_m" value="0.0"/>
+				<param name="marginalUtilityOfTraveling_util_hr" value="0.0"/>
+				<param name="mode" value="pt"/>
+				<param name="monetaryDistanceRate" value="0.0"/>
+			</parameterset>
+			<parameterset type="modeParams">
+				<param name="constant" value="0.0"/>
+				<param name="dailyMonetaryConstant" value="0.0"/>
+				<param name="dailyUtilityConstant" value="0.0"/>
+				<param name="marginalUtilityOfDistance_util_m" value="0.0"/>
+				<param name="marginalUtilityOfTraveling_util_hr" value="0.0"/>
+				<param name="mode" value="walk"/>
+				<param name="monetaryDistanceRate" value="0.0"/>
+			</parameterset>
+			<parameterset type="modeParams">
+				<param name="constant" value="-2.2321797854695955"/>
+				<param name="dailyMonetaryConstant" value="-1.0"/>
+				<param name="dailyUtilityConstant" value="0.0"/>
+				<param name="marginalUtilityOfDistance_util_m" value="0.0"/>
+				<param name="marginalUtilityOfTraveling_util_hr" value="0.0"/>
+				<param name="mode" value="bike"/>
+				<param name="monetaryDistanceRate" value="0.0"/>
+			</parameterset>
+			<parameterset type="activityParams">
+				<param name="activityType" value="leisure"/>
+				<param name="priority" value="1"/>
+				<param name="typicalDuration" value="01:00:00"/>
+			</parameterset>
+			<parameterset type="activityParams">
+				<param name="activityType" value="other"/>
+				<param name="priority" value="1"/>
+				<param name="typicalDuration" value="01:00:00"/>
+			</parameterset>
+			<parameterset type="activityParams">
+				<param name="activityType" value="shopping"/>
+				<param name="priority" value="1"/>
+				<param name="typicalDuration" value="01:00:00"/>
+			</parameterset>
+			<parameterset type="activityParams">
+				<param name="activityType" value="work"/>
+				<param name="priority" value="1"/>
+				<param name="typicalDuration" value="08:00:00"/>
+			</parameterset>
+			<parameterset type="activityParams">
+				<param name="activityType" value="home"/>
+				<param name="priority" value="1"/>
+				<param name="typicalDuration" value="12:00:00"/>
+			</parameterset>
+		</parameterset>
+	</module>
+	<module name="plans">
+		<param name="inputPlansFile" value="population.xml"/>
+		<param name="removingUnnecessaryPlanAttributes" value="true"/>
+	</module>
+	<module name="routing">
+		<param name="accessEgressType" value="accessEgressModeToLink"/>
+		<param name="networkModes" value="car"/>
+		<parameterset type="teleportedModeParameters">
+			<param name="beelineDistanceFactor" value="1.3"/>
+			<param name="mode" value="walk"/>
+			<param name="teleportedModeSpeed" value="1.0555556"/>
+		</parameterset>
+		<parameterset type="teleportedModeParameters">
+			<param name="beelineDistanceFactor" value="1.3"/>
+			<param name="mode" value="bike"/>
+			<param name="teleportedModeSpeed" value="3.1388889"/>
+		</parameterset>
+	</module>
+	<module name="qsim">
+		<param name="flowCapacityFactor" value="1"/>
+		<param name="storageCapacityFactor" value="1"/>
+		<param name="endTime" value="30:00:00"/>
+		<param name="startTime" value="00:00:00"/>
+		<param name="stuckTime" value="30.0"/>
+		<param name="snapshotperiod" value="00:00:00"/>
+	</module>
+	<module name="replanning">
+		<param name="maxAgentPlanMemorySize" value="5"/>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="ChangeExpBeta"/>
+			<param name="weight" value="0.6"/>
+		</parameterset>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="ReRoute"/>
+			<param name="weight" value="0.1"/>
+		</parameterset>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="TimeAllocationMutator"/>
+			<param name="weight" value="0.2"/>
+		</parameterset>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="SubtourModeChoice"/>
+			<param name="weight" value="0.1"/>
+		</parameterset>
+	</module>
+	<module name="transit">
+		<param name="routingAlgorithmType" value="SwissRailRaptor"/>
+		<param name="transitScheduleFile" value="ScheduleFile.xml"/>
+		<param name="useTransit" value="true"/>
+		<param name="vehiclesFile" value="defaultransitvehicles.xml"/>
+	</module>
+	<module name="transitRouter">
+		<param name="extensionRadius" value="500.0"/>
+	</module>
+	<module name="vspExperimental">
+		<param name="vspDefaultsCheckingLevel" value="warn"/>
+	</module>
+	<module name="changeMode">
+		<param name="ignoreCarAvailability" value="true"/>
+		<param name="modes" value="car,pt,bike,walk"/>
+	</module>
+	<module name="subtourModeChoice">
+		<param name="behavior" value="betweenAllAndFewerConstraints"/>
+		<param name="chainBasedModes" value="car"/>
+		<param name="coordDistance" value="100"/>
+		<param name="modes" value="car,pt,bike,walk"/>
+		<param name="probaForRandomSingleTripMode" value="0.5"/>
+	</module>
+</config>
