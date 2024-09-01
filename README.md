@@ -27,6 +27,12 @@ The output of CEMDAP can not immediately be used as an population.xml file for M
 For this, the software tool [CEMDAP2MATsim](https://github.com/fzenoni/matsim/tree/f4958b063b76ddef2f2fc4b5fa68e1ed8346bf84/playgrounds/dziemke/src/main/java/playground/dziemke/cemdapMatsimCadyts/cemdap2matsim) has to be used.
 
 ## 2. CaDyTS  
+CaDyTS is used to create the *counts.xml* file that can calibrate the MATSim scenario.
+How this works is described here: [CaDyTS in MATSim](https://github.com/matsim-org/matsim-libs/blob/master/contribs/cadytsIntegration/README.md).
+
+The directory *CaDyTS* contains one file that is used to transform the induction loop data into a format that can be transferred into the _counts.xml_ file.
+All data sources for the 16.05.2023 are present in the _CaDyTS_Transformer.py_ file.
+Please also note the comments in this file.
 
 ## 3. MATSim  
 
