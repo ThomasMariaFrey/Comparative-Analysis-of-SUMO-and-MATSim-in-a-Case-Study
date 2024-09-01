@@ -45,9 +45,20 @@ Copy the files from this repository into the imported MATSim repository.
 Make sure to follow the directory structure that is present in this repository for the placement of the files.
 You will now be able to run the Mannheim scenario by running either _Mannheim10.java_ or _Mannheim100.java_.
 
+_Mannheim10.java_ runs the scenario with a 10% sample of the population. This means that all parameters for the network, such as road capacity and all parameters for the counts are also scaled down to 10%.
+_Mannheim100.java_ runs the full scenario.
+
+Important: The network.xml and the full-size population.xml files are too large to be uploaded to this repository. 
+You can find these files either in this [drive link](https://drive.google.com/drive/folders/1TnH8Uwsgix9OJhB_5pLKDX3D8Q1G59kZ?usp=sharing) or in the USB stick that was submitted on the 05.09.2024. 
+To run the scenario place the network.xml and population.xml files at the location where the network.txt and population.txt files are placed currently.
 
 Note: The network file of this scenario was created with [JOSM](https://josm.openstreetmap.de/) and [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis#Downloading). 
 To include public transport [PT2MATSim](https://github.com/matsim-org/pt2matsim/tree/master) was used.
+
+The BEAM scenario is used to explore the reinforcement learning capacities of MATSim.
+To run the simulation you must also setup the framework yourself and import the provided data sources.
+Import and set up the framework from the [Beam Repository](https://github.com/LBNL-UCB-STI/beam).
+
 
 ## 4. Results  
 The _Results_ directory contains scripts that I used to extract information and generate graphs for the presentation in my thesis. 
