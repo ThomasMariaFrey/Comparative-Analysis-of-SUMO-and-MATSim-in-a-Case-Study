@@ -1,0 +1,2 @@
+service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+TR-2017-ALL-YEAR,1,1,1,1,1,1,1,20160101,20191231
