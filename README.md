@@ -17,7 +17,7 @@ Results contains the scripts that are used to extract output data.
 4. [Results](#4-results)
 
 ## 1. CEMDAP  
-CEMDAP is used to create the *population.xml* file which is used as the input for the MATSim scenario.  
+CEMDAP is used to create the *population.xml* file which is used as a central input for the MATSim scenario.  
 The software tool can be downloaded here: [CEMDAP Download](https://www.caee.utexas.edu/prof/bhat/cemdap.htm).  
 How the input data, that is being created by the following scripts, can be imported into CEMDAP and how the activity plans are generated is described in detail in the CEMDAP user manual. This manual is found in the download link.  
 
