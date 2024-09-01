@@ -35,9 +35,8 @@ The directory *CaDyTS* contains one file that is used to transform the induction
 All data sources for the 16.05.2023 are present in the _CaDyTS_Transformer.py_ file.
 
 ## 3. MATSim  
-
-Note: The network file of this scenario was created with [JOSM](https://josm.openstreetmap.de/) and [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis#Downloading). To include public transport 
-https://github.com/matsim-org/pt2matsim/tree/master
+Note: The network file of this scenario was created with [JOSM](https://josm.openstreetmap.de/) and [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis#Downloading). 
+To include public transport [PT2MATSim](https://github.com/matsim-org/pt2matsim/tree/master) was used.
 
 ## 4. Results  
 The _Results_ directory contains scripts that I used to extract information and generate graphs for the presentation in my thesis. 
