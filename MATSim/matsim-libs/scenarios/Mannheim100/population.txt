@@ -1,0 +1,3 @@
+IMPORTANT: The network.xml and the full size population.xml files are to large to be uploaded to this repository. 
+You can find these files either in the following drive link: https://drive.google.com/drive/folders/1TnH8Uwsgix9OJhB_5pLKDX3D8Q1G59kZ?usp=sharing or in the USB stick that was submitted on the 05.09.2024. 
+To run the scenario place the network.xml and population.xml files at the location where the network.txt and population.txt files are placed currently.
