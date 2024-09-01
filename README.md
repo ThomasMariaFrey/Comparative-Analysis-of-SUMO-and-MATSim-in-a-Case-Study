@@ -41,7 +41,7 @@ To include public transport [PT2MATSim](https://github.com/matsim-org/pt2matsim/
 ## 4. Results  
 The _Results_ directory contains scripts that I used to extract information and generate graphs for the presentation in my thesis. 
 Many files have not been included as they contain references to individual movement data. 
-Therefore only scripts that consider MATSim, not MATSim in combination with SUMO and the Survey are included.
+Therefore only scripts that consider MATSim and BEAM, not MATSim in combination with SUMO and the Survey are included.
 These files are not relevant for the generation of the MATSim scenario.
 
 
