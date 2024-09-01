@@ -23,7 +23,8 @@ How the input data, that is being created by the following scripts, can be impor
 
 The directory *CEMDAP* contains all files necessary for the creation of the input data. The five creation files, noted by the CEMDAP_ at the beginning of the filename, are used to create output files in the *data* directory. The output files correspond in name to the creation files, except for *CEMDAP_LevelOfServiceGenerator.py* which generates the output files *losoffpk.dat*, *lospeakam.dat* and *lospeakpm.dat*. Data sources are provided in the geodata.py file. 
 
-TODO cemdap2plans
+The output of CEMDAP can not immediately be used as an population.xml file for MATSim.
+For this, the software tool [CEMDAP2MATsim](https://github.com/fzenoni/matsim/tree/f4958b063b76ddef2f2fc4b5fa68e1ed8346bf84/playgrounds/dziemke/src/main/java/playground/dziemke/cemdapMatsimCadyts/cemdap2matsim) has to be used.
 
 ## 2. CaDyTS  
 
