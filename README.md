@@ -22,7 +22,7 @@ CEMDAP is used to create the *population.xml* file which is used as a central in
 The software tool can be downloaded here: [CEMDAP Download](https://www.caee.utexas.edu/prof/bhat/cemdap.htm).  
 How the input data, that is being created by the following scripts, can be imported into CEMDAP and how the activity plans are generated is described in detail in the CEMDAP user manual. This manual is found in the download link.  
 
-The directory *CEMDAP* contains all files necessary for the creation of the input data. The five creation files, noted by the CEMDAP_ at the beginning of the filename, are used to create output files in the *data* directory. The output files correspond in name to the creation files, except for *CEMDAP_LevelOfServiceGenerator.py* which generates the output files *losoffpk.dat*, *lospeakam.dat* and *lospeakpm.dat*. Data sources are provided in the geodata.py file. 
+The directory *CEMDAP* contains all files necessary for the creation of the input data. The five creation files, noted by the CEMDAP_ at the beginning of the filename, are used to create output files in the *data* directory. The output files correspond in name to the creation files, except for *CEMDAP_LevelOfServiceGenerator.py* which generates the output files *losoffpk.dat*, *lospeakam.dat*, and *lospeakpm.dat*. Data sources are provided in the geodata.py file. 
 
 The output of CEMDAP can not immediately be used as a population.xml file for MATSim.
 For this, the software tool [CEMDAP2MATsim](https://github.com/fzenoni/matsim/tree/f4958b063b76ddef2f2fc4b5fa68e1ed8346bf84/playgrounds/dziemke/src/main/java/playground/dziemke/cemdapMatsimCadyts/cemdap2matsim) has to be used.
@@ -41,7 +41,7 @@ In the following paragraph, I will explain one tested way how this can be done.
 
 Go to the [MATSim Org](https://github.com/matsim-org) and import the [matsim-libs](https://github.com/matsim-org/matsim-libs) repository into IntelliJ IDEA.
 Set up the MATSim Framework as outlined on the MATSim Org page.
-Copy the files from this repository into the imported MATSim repository. 
+Copy the files from this repository, placed in the _MATSim/matsim-libs_ directory, into the imported MATSim project. 
 Make sure to follow the directory structure that is present in this repository for the placement of the files.
 You will now be able to run the Mannheim scenario by running either _Mannheim10.java_ or _Mannheim100.java_.
 
@@ -58,7 +58,11 @@ To include public transport [PT2MATSim](https://github.com/matsim-org/pt2matsim/
 The BEAM scenario is used to explore the reinforcement learning capacities of MATSim.
 To run the simulation you must also setup the framework yourself and import the provided data sources.
 Import and set up the framework from the [Beam Repository](https://github.com/LBNL-UCB-STI/beam).
-
+Follow the tutorial present on the webpage to do this.
+Copy the files from this repository, placed in the _MATSim/beam/_ directory, into the imported BEAM project.
+Also, make sure that the directory structure that is present is followed for the placement.
+A conversion of the Mannheim scenario is not necessary, as this has already been done.
+The Mannheim scenario can now be run like one of the other scenarios.
 
 ## 4. Results  
 The _Results_ directory contains scripts that I used to extract information and generate graphs for the presentation in my thesis. 
